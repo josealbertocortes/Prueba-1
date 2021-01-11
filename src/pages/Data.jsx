@@ -9,17 +9,21 @@ export default function Data() {
   const [filterText, setFilterText] = useState("");
   const data = [
     {
+      aditionalInformation: "Piso 12",
+      age: 25,
+      city: "CDMX",
+      country: "MX",
+      email: "edgar.pozadas@platimex.com.mx",
+      firstName: "Platimex",
       idClient: 1,
-      firstName: "Luis",
-      lastName: "Lopez",
-      email: "luis@platimex.com",
-      gender: "Male",
-      regInformation: "2019-10-30",
-      country: "Mexico",
-      source: "Venis",
-      funnel: "Venis",
-      agent: "Issai",
-      lastContact: "Yesterday",
+      idLeadStatus: 1,
+      insertDate: "2021-01-11 10:40",
+      lastName: "Sofware Solutions",
+      leadStatus: "New",
+      phoneNumber: "5572037160",
+      state: "CDMX",
+      street: "Insurgentes Sur 105",
+      zipCode: "06300"
     },
   ];
   const columns = [
@@ -44,13 +48,8 @@ export default function Data() {
       sortable: true,
     },
     {
-      name: "Gender",
-      selector: "gender",
-      sortable: true,
-    },
-    {
-      name: "Reg Information",
-      selector: "regInformation",
+      name: "Phone Number",
+      selector: "phoneNumber",
       sortable: true,
     },
     {
@@ -59,23 +58,8 @@ export default function Data() {
       sortable: true,
     },
     {
-      name: "Source",
-      selector: "source",
-      sortable: true,
-    },
-    {
-      name: "Funnel",
-      selector: "funnel",
-      sortable: true,
-    },
-    {
-      name: "Agent",
-      selector: "agent",
-      sortable: true,
-    },
-    {
-      name: "Last Contact",
-      selector: "lastContact",
+      name: "Reg Information",
+      selector: "insertDate",
       sortable: true,
     },
     {

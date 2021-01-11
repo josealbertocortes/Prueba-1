@@ -25,10 +25,6 @@ export default function Login() {
                 <input type="text" name="" id="" />
               </article>
               <article>
-                <label htmlFor="">Client ID</label>
-                <input type="text" name="" id="" />
-              </article>
-              <article>
                 <label htmlFor="">Email</label>
                 <input type="text" name="" id="" />
               </article>
@@ -37,37 +33,13 @@ export default function Login() {
                 <input type="text" name="" id="" />
               </article>
               <article>
-                <label htmlFor="">Salutation</label>
-                <input type="text" name="" id="" />
-              </article>
-              <article>
-                <label htmlFor="">Funnel</label>
-                <select name="" id=""></select>
-              </article>
-              <article>
-                <label htmlFor="">Last Contact</label>
-                <input type="text" name="" id="" />
-              </article>
-              <article>
                 <label htmlFor="">Lead Status</label>
-                <input type="text" name="" id="" />
-              </article>
-              <article>
-                <label htmlFor="">Lead Status</label>
-                <select name="" id=""></select>
-              </article>
-              <article>
-                <label htmlFor="">Ranting</label>
-                <select name="" id=""></select>
-              </article>
-              <article>
-                <label htmlFor="">Last Contact Time & Date</label>
-                <select name="" id=""></select>
+                <select type="text" name="" id="" />
               </article>
             </div>
           </div>
           <div className="additionalInfo">
-            <h2>Additional Information</h2>
+            <h2>Address</h2>
             <div className="additionalData">
               <article>
                 <label htmlFor="">Street</label>

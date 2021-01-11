@@ -2,11 +2,11 @@
 
 .information {
   @include shadowBorder();
-  @include grid(2fr 1fr, 50px);
+  @include grid(repeat(2, 1fr), 50px);
   padding: 50px 20px;
   .generalInfo {
     .generalData {
-      @include grid(repeat(4, 1fr), 30px);
+      @include grid(repeat(3, 1fr), 30px);
       margin-top: 50px;
     }
   }
