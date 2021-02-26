@@ -1,0 +1,68 @@
+{% extends "usuario/crud/base.html" %}
+{% block content %}
+
+<form  method="POST" id="myForm" enctype="multipart/form-data"> 
+  
+    <!-- Security token -->
+    {% csrf_token %} 
+  
+    <!-- Using the formset -->
+    <div class="mb-3">
+        <label for="nombre" class="form-label">nombre</label>
+        <input class="form-control" type="text" name="nombre" value="{{nombre}}" aria-label="default input example">
+    </div>
+
+    <div class="mb-3">
+        <label for="apellido" class="form-label">apellido</label>
+        <input class="form-control" type="text" name="apellido" value="{{apellido}}"  aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="numerotelefonico" class="form-label">numero telefonico</label>
+        <input class="form-control" type="text" name="numerotelefonico" value="{{numerotelefonico}}"   aria-label="default input example">
+        <span>por favor introducirlo con la lada </span>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo electronico</label>
+        <input class="form-control" type="email" name="email" value="{{email}}"   aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="edad" class="form-label">edad</label>
+        <input class="form-control" type="number" name="edad" value="{{edad}}" aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="estadocliente" class="form-label">Estado de cliente</label>
+        <input class="form-control" type="text" name="estadocliente" value="{{estadocliente}}"  aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="calle" class="form-label">Calle</label>
+        <input class="form-control" type="text" name="calle" value="{{calle}}"  aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="ciudad" class="form-label">Ciudad</label>
+        <input class="form-control" type="text" name="ciudad" value="{{ciudad}}" aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="estado" class="form-label">Estado</label>
+        <input class="form-control" type="text" name="estado" value="{{estado}}" aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="codigopostal" class="form-label">Codigo postal</label>
+        <input class="form-control" type="text" name="codigopostal" value="{{codigopostal}}" aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="pais" class="form-label">Pais</label>
+        <input class="form-control" type="text" name="pais" value="{{pais}}" aria-label="default input example">
+    </div>
+    <div class="mb-3">
+        <label for="informacion" class="form-label">Informacion</label>
+        <input class="form-control" type="text" name="informacion" value="{{informacion}}" aria-label="default input example">
+    </div>
+    
+
+
+      
+    <input type="submit" value="Actualizar"> 
+</form> 
+
+
+{% endblock %}

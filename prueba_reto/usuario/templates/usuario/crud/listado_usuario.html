@@ -1,0 +1,49 @@
+{% extends "usuario/crud/base.html" %}
+{% block content %}
+<div>
+    <a href='{% url "usuario:altausuario" %}'>Creacion</a>
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Número de teléfono </th>
+        <th scope="col">Correo Electrónico </th>
+        
+        <th scope="col">Pais </th>
+        <th scope="col">Fecha de registro </th>
+        <th scope="col">Actualizar </th>
+        <th scope="col">Eliminar</th>
+        <th scope="col">Mas detalles</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for data in datos %}
+        <tr>
+            
+            
+            <th>{{ data.id }} </th>
+            <th>{{ data.nombre }} </th>
+            <th>{{ data.apellido }} </th>
+            <th>{{ data.numerotelefonico }} </th>
+            <th>{{ data.email }} </th>
+            <th>{{ data.pais }} </th>
+            <th>{{ data.creado }} </th>
+            <th><a href="{% url 'usuario:actualizar' data.id %}">Actualizar</a></th>
+            <th><a href="{% url 'usuario:eliminar' data.id %}">Eliminar</a></th>
+            <th><a href="{% url 'usuario:detalle' data.id %}">Más detalles</a></th>
+            
+        </tr>
+            {% endfor %} 
+
+
+        
+      
+
+    </tbody>
+  </table>
+
+  {% endblock %}

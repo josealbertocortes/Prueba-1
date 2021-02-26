@@ -1,0 +1,52 @@
+{% extends "usuario/crud/base.html" %}
+{% block content %}
+<div>
+    <a href='{% url "usuario:altausuario" %}'>Creacion</a>
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Número de teléfono </th>
+        <th scope="col">Correo Electrónico </th>
+        
+        <th scope="col">Pais </th>
+        <th scope="col">ciudad </th>
+        <th scope="col">codigo postal </th>
+        <th scope="col">informacion </th>
+        <th scope="col">estado de cliente </th>
+        <th scope="col">Fecha de registro </th>
+        <th scope="col">Actualizar </th>
+        <th scope="col">Eliminar </th>
+      </tr>
+    </thead>
+    <tbody>
+       
+        <tr>
+            
+            
+            <th>{{ datos.id }} </th>
+            <th>{{ datos.nombre }} </th>
+            <th>{{ datos.apellido }} </th>
+            <th>{{ datos.numerotelefonico }} </th>
+            <th>{{ datos.email }} </th>
+            <th>{{ datos.pais }} </th>
+            <th>{{ datos.ciudad }} </th>
+            <th>{{ datos.codigopostal }} </th>
+            <th>{{ datos.informacion }} </th>
+            <th>{{ datos.estadodecliente }} </th>
+            <th>{{ datos.fechaderegistro }} </th>
+            <th><a href="{% url 'usuario:actualizar' datos.id %}">Actualizar</a></th>
+            <th><a href="{% url 'usuario:eliminar' datos.id %}">Eliminar</a></th>
+         
+            
+        </tr>
+      
+
+    </tbody>
+  </table>
+
+  {% endblock %}
